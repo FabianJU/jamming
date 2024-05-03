@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Jamming
+
+Jamming is a React App enabling users to search the Spotify catalog for songs, curate personalized playlists, and save them to their account.
+
+The app uses the Spotify Web API for authentication and data retrieval. The Spotify object contains methods to interact with the Spotify API.
+
+It follows RESTful principles for data operations:
+
+- **Create:** Adding tracks to a playlist involves sending a POST request.
+- **Read:** Searching for tracks involves sending a GET request.
+- **Update:** While updating playlist title isn't directly supported, users can create a new playlist with the desired title and add tracks to it.
+- **Delete:** Removing a track from a playlist involves sending a DELETE request.
+
+## Technologies 
+Jamming utilizes React.js for the front-end, allowing users to search the Spotify catalog, create playlists, and save them to their account. The app interacts with the Spotify Web API to fetch data. HTML and CSS are used for styling the user interface.
+
+## Features
+
+1. **Spotify Login:** The first time a user searches for a song, album, or artist, Spotify will ask them to log in or set up a new account.
+
+2. **Search by Song, Album, or Artist:** Users can type the name of a song, artist, or album into the search bar and click the SEARCH button.
+
+3. **Populate Results List:** Jammming displays the list of returned tracks from the user’s query.
+
+4. **Add Song to Custom Playlist:** Users can add a track to their playlist by selecting a + sign on the right side of the track’s display container.
+
+5. **Remove Song from Custom Playlist:** Users can remove a track from their playlist by selecting a - sign on the right side of the track’s display container.
+
+6. **Change Playlist Title:** Users can change the title of their custom playlist.
+
+7. **Save Playlist to Account:** Users can save their custom playlist by clicking a button called SAVE TO SPOTIFY.
+
+## Documentation of Spotify API
+[Spotify API Documentation](https://developer.spotify.com/documentation/web-api)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## What I Learned
 
-In the project directory, you can run:
+Through this project, I gained valuable experience in:
 
+- Making GET and POST requests using the Fetch API in JavaScript.
+- Implementing user authentication by directing users to a login page and redirecting them back to the website.
+- Understanding and utilizing API documentation effectively.
+
+## Local setup
+
+To set up the project locally from the "jamming" directory, execute the following CLI commands:
+### `npm install`
+This command installs all Node dependencies for React and other third-party packages used in the project.
 ### `npm start`
+Launches the app in development mode using node server.js. Access it at http://localhost:3000 in your browser. The page automatically reloads on source code edits, and linting errors are displayed in the console.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
