@@ -1,5 +1,5 @@
 # Jamming
-
+<img width="1512" alt="Screenshot 2024-05-03 at 1 30 36 PM" src="https://github.com/FabianJU/jamming/assets/62031828/499d0e04-0cc7-486b-9bb0-c009ea9ec84b">
 Jamming is a React App enabling users to search the Spotify catalog for songs, curate personalized playlists, and save them to their account.
 
 The app uses the Spotify Web API for authentication and data retrieval. The Spotify object contains methods to interact with the Spotify API.
